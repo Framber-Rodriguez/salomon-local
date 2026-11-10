@@ -1,3 +1,4 @@
+// Modified for Salomon: installed web app name.
 import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -25,8 +26,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'OpenJarvis',
-        short_name: 'Jarvis',
+        name: 'Salomon',
+        short_name: 'Salomon',
         description: 'On-device AI assistant',
         theme_color: '#161618',
         background_color: '#161618',
