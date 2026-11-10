@@ -1,3 +1,4 @@
+# Modified for Salomon: user-facing branding; based on OpenJarvis.
 [build-system]
 requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
@@ -213,6 +214,7 @@ Repository = "https://github.com/open-jarvis/OpenJarvis"
 Issues = "https://github.com/open-jarvis/OpenJarvis/issues"
 
 [project.scripts]
+salomon = "openjarvis.cli:main"
 jarvis = "openjarvis.cli:main"
 openjarvis-eval = "openjarvis.evals.cli:main"
 

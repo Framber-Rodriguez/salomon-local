@@ -1,3 +1,4 @@
+// Modified for Salomon: user-facing branding; based on OpenJarvis.
 import { useEffect, useState } from 'react';
 import { Outlet, useNavigate } from 'react-router';
 import { ApprovalBell } from './ApprovalBell';
@@ -44,7 +45,7 @@ export function Layout() {
             className="w-1.5 h-1.5 rounded-full shrink-0"
             style={{ background: 'var(--color-error)' }}
           />
-          <span>Cannot reach OpenJarvis backend</span>
+          <span>Cannot reach Salomon backend</span>
           <button
             onClick={() => navigate('/settings')}
             className="text-sm underline cursor-pointer ml-auto shrink-0"

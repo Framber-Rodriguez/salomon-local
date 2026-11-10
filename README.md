@@ -1,18 +1,23 @@
-<div align="center">
-  <img alt="OpenJarvis" src="assets/OpenJarvis_Horizontal_Logo.png" width="400">
+# Salomon
 
-  <p><i>Personal AI, On Personal Devices.</i></p>
+Salomon is a local-first personal AI assistant based on [OpenJarvis](https://github.com/open-jarvis/OpenJarvis). This fork changes the assistant name, startup banner, app titles, and adds the `salomon` command. The original authors and [Apache 2.0 license](LICENSE) are retained.
 
-  <p>
-    <a href="https://arxiv.org/abs/2605.17172"><img src="https://img.shields.io/badge/arXiv-2605.17172-b31b1b.svg" alt="arXiv"></a>
-    <a href="https://openjarvis.stanford.edu/"><img src="https://img.shields.io/badge/project-OpenJarvis-blue" alt="Project"></a>
-    <a href="https://open-jarvis.github.io/OpenJarvis/"><img src="https://img.shields.io/badge/docs-mkdocs-blue" alt="Docs"></a>
-    <img src="https://img.shields.io/badge/python-%3E%3D3.10-blue" alt="Python">
-    <img src="https://img.shields.io/badge/license-Apache%202.0-green" alt="License">
-    <a href="https://discord.gg/CMVBmDQ5Fj"><img src="https://img.shields.io/badge/discord-join-7289da?logo=discord&logoColor=white" alt="Discord"></a>
-    <a href="https://x.com/OpenJarvisAI"><img src="https://img.shields.io/badge/X-@OpenJarvisAI-black?logo=x&logoColor=white" alt="X / Twitter"></a>
-  </p>
-</div>
+## Run Salomon from source
+
+On Windows, macOS, or Linux, install Git, [uv](https://docs.astral.sh/uv/getting-started/installation/), and Node.js 22.22+ with the npm version specified in [the frontend manifest](frontend/package.json). For replies without cloud API credits, install [Ollama](https://ollama.com/) and run a compatible local model. Model speed and capacity depend on your hardware.
+
+```sh
+git clone https://github.com/Framber-Rodriguez/salomon-local.git
+cd salomon-local
+uv sync
+uv run salomon gui
+```
+
+Choose local Ollama in the setup screen. For terminal chat, use `uv run salomon`. The original `jarvis` command remains available for compatibility with upstream documentation and scripts.
+
+This is a source checkout. The upstream downloads below install **OpenJarvis**, and are not Salomon installers. The local backend runs on your computer; this is not a GitHub Pages deployment or a native phone app.
+
+## Upstream OpenJarvis documentation
 
 ---
 

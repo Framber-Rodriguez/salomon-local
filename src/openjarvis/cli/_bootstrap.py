@@ -1,3 +1,4 @@
+# Modified for Salomon: user-facing branding; based on OpenJarvis.
 """Cloud-key auto-detection and initial-config writing.
 
 Used by both ``install.sh`` (via ``jarvis _bootstrap --write-config``)
@@ -71,7 +72,7 @@ def detect_cloud_keys() -> Optional[CloudProvider]:
 # Initial config writer
 # ---------------------------------------------------------------------------
 
-_DEFAULT_SOUL = "# Agent Persona\n\nYou are Jarvis, a helpful personal AI assistant.\n"
+_DEFAULT_SOUL = "# Agent Persona\n\nYou are Salomon, a helpful personal AI assistant.\n"
 _DEFAULT_MEMORY = "# Agent Memory\n\n"
 _DEFAULT_USER = "# User Profile\n\n"
 

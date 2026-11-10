@@ -1,3 +1,4 @@
+# Modified for Salomon: user-facing branding; based on OpenJarvis.
 """Command-line interface for OpenJarvis (Click-based)."""
 
 from __future__ import annotations
@@ -38,7 +39,7 @@ def _should_skip_update_check(ctx: click.Context, argv: list[str]) -> bool:
     help="OpenJarvis — modular AI assistant backend",
     invoke_without_command=True,
 )
-@click.version_option(version=openjarvis.__version__, prog_name="jarvis")
+@click.version_option(version=openjarvis.__version__, prog_name="salomon")
 @click.option("--verbose", is_flag=True, default=False, help="Enable debug logging")
 @click.option("--quiet", is_flag=True, default=False, help="Suppress non-error output")
 @click.option(
